@@ -11,6 +11,8 @@
 		EE773FEA287A959D001F9F5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE773FE9287A959D001F9F5F /* ContentView.swift */; };
 		EE773FEC287A95A0001F9F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE773FEB287A95A0001F9F5F /* Assets.xcassets */; };
 		EE773FEF287A95A0001F9F5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE773FEE287A95A0001F9F5F /* Preview Assets.xcassets */; };
+		EE773FF6287A99FC001F9F5F /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE773FF5287A99FC001F9F5F /* RecordingView.swift */; };
+		EE773FFA287AACFC001F9F5F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE773FF9287AACFC001F9F5F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EE773FE9287A959D001F9F5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE773FEB287A95A0001F9F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE773FEE287A95A0001F9F5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE773FF5287A99FC001F9F5F /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		EE773FF9287AACFC001F9F5F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				EE773FE9287A959D001F9F5F /* ContentView.swift */,
 				EE773FEB287A95A0001F9F5F /* Assets.xcassets */,
 				EE773FED287A95A0001F9F5F /* Preview Content */,
+				EE773FF5287A99FC001F9F5F /* RecordingView.swift */,
+				EE773FF9287AACFC001F9F5F /* Extensions.swift */,
 			);
 			path = "video-recorder-swiftui";
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE773FFA287AACFC001F9F5F /* Extensions.swift in Sources */,
 				EE773FEA287A959D001F9F5F /* ContentView.swift in Sources */,
 				EE773FE8287A959D001F9F5F /* video_recorder_swiftuiApp.swift in Sources */,
+				EE773FF6287A99FC001F9F5F /* RecordingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +278,8 @@
 				DEVELOPMENT_TEAM = U7XVUW953J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To record video, edit and save.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To record audio while recording video";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +309,8 @@
 				DEVELOPMENT_TEAM = U7XVUW953J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To record video, edit and save.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To record audio while recording video";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
